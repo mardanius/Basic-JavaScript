@@ -173,3 +173,140 @@ to reassign a variable that is meant to stay constant.
 Note: It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase 
 for mutable values (objects and arrays). You will learn more about objects, arrays, and immutable and mutable values in later 
 challenges. Also in later challenges, you will see examples of uppercase, lowercase, or camelCase variable identifiers. */
+
+
+
+
+/*=================================
+11. Add Two Numbers with JavaScript
+===================================
+
+Number is a data type in JavaScript which represents numeric data.
+
+Now let's try to add two numbers using JavaScript.
+
+JavaScript uses the + symbol as an addition operator when placed between two numbers.
+
+Example:
+
+const myVar = 5 + 10;
+myVar now has the value 15. */
+
+
+
+
+/*==================================================
+12. Subtract One Number from Another with JavaScript
+====================================================
+
+We can also subtract one number from another.
+
+JavaScript uses the - symbol for subtraction.
+
+Example
+
+const myVar = 12 - 6;
+myVar would have the value 6. */
+
+
+
+
+/*=====================================
+13. ultiply Two Numbers with JavaScript
+=======================================
+
+We can also multiply one number by another.
+
+JavaScript uses the * symbol for multiplication of two numbers.
+
+Example
+
+const myVar = 13 * 13;
+myVar would have the value 169. */
+
+
+
+
+/*==============================================
+14. Divide One Number by Another with JavaScript
+================================================
+
+We can also divide one number by another.
+
+JavaScript uses the / symbol for division.
+
+Example
+
+const myVar = 16 / 2;
+myVar now has the value 8.
+
+Change the 0 so that the quotient is equal to 2. */
+
+
+
+
+/*====================================
+15. Increment a Number with JavaScript
+======================================
+
+You can easily increment or add one to a variable with the ++ operator.
+
+i++;
+is the equivalent of
+
+i = i + 1;
+Note: The entire line becomes i++;, eliminating the need for the equal sign.
+
+Change the code to use the ++ operator on myVar. */
+
+
+
+
+/*====================================
+16. Decrement a Number with JavaScript
+======================================
+
+You can easily decrement or decrease a variable by one with the -- operator.
+
+i--;
+is the equivalent of
+
+i = i - 1;
+Note: The entire line becomes i--;, eliminating the need for the equal sign. */
+
+
+
+
+
+/*========================================
+17. Create Decimal Numbers with JavaScript
+==========================================
+
+We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as floating point numbers or floats.
+
+Note: computers represent numbers with finite precision. That's why floating-point operations cannot precisely represent true 
+arithmetic operations, and this leads to many surprising situations. if you are facing one of these issues, open topic in the 
+freeCodeCamp forum. */
+
+
+
+
+/*=======================================
+18. Multiply Two Decimals with JavaScript
+=========================================
+
+In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers. */
+
+const product = 3.4 * 9.1;
+console.log(product);
+
+
+
+
+/*===============================================
+19. Divide One Decimal by Another with JavaScript
+=================================================
+
+Now let's divide one decimal by another. */
+
+const quotient = 0.0 / 2.0;
