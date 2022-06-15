@@ -718,3 +718,218 @@ You can also nest arrays within other arrays, like below:
 
 const teams = [["Bulls", 23], ["White Sox", 45]];
 This is also called a multi-dimensional array. */
+
+
+
+
+/*================================
+41. Access Array Data with Indexes
+==================================
+
+We can access the data inside arrays using indexes.
+
+Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, 
+they are specifying an entry in the array. Like strings, arrays use zero-based indexing, so the first element in an array has 
+an index of 0.
+
+
+Example
+
+const array = [50, 60, 70];
+console.log(array[0]);
+const data = array[1];
+The console.log(array[0]) prints 50, and data has the value 60. */
+
+
+
+
+/*================================
+42. Modify Array Data With Indexes
+==================================
+
+Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const.
+
+Example
+
+const ourArray = [50, 40, 30];
+ourArray[0] = 15;
+ourArray now has the value [15, 40, 30].
+
+Note: There shouldn't be any spaces between the array name and the square brackets, like array [0]. 
+Although JavaScript is able to process this correctly, this may confuse other programmers reading your code. */
+
+
+
+
+/*==============================================
+43. Access Multi-Dimensional Arrays With Indexes
+================================================
+
+One way to think of a multi-dimensional array, is as an array of arrays. When you use brackets to access your array, 
+the first set of brackets refers to the entries in the outer-most (the first level) array, and each additional pair of 
+brackets refers to the next level of entries inside.
+
+Example
+
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14]
+];
+
+arr[3];
+arr[3][0];
+arr[3][0][1];
+arr[3] is [[10, 11, 12], 13, 14], arr[3][0] is [10, 11, 12], and arr[3][0][1] is 11.
+
+Note: There shouldn't be any spaces between the array name and the square brackets, 
+like array [0][0] and even this array [0] [0] is not allowed. Although JavaScript is able to process this correctly, 
+this may confuse other programmers reading your code. */
+
+
+
+
+/*===============================
+44. Manipulate Arrays With push()
+=================================
+
+An easy way to append data to the end of an array is via the push() function.
+
+.push() takes one or more parameters and "pushes" them onto the end of the array.
+
+Examples:
+
+const arr1 = [1, 2, 3];
+arr1.push(4);
+
+const arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);
+arr1 now has the value [1, 2, 3, 4] and arr2 has the value ["Stimpson", "J", "cat", ["happy", "joy"]]. */
+
+
+
+
+/*==============================
+45. Manipulate Arrays With pop()
+================================
+
+Another way to change the data in an array is with the .pop() function.
+
+.pop() is used to pop a value off of the end of an array. We can store this popped off value by assigning it to a variable. 
+In other words, .pop() removes the last element from an array and returns that element.
+
+Any type of entry can be popped off of an array - numbers, strings, even nested arrays.
+
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+The first console.log will display the value 6, and the second will display the value [1, 4]. */
+
+
+
+
+/*================================
+46. Manipulate Arrays With shift()
+==================================
+
+pop() always removes the last element of an array. What if you want to remove the first?
+
+That's where .shift() comes in. It works just like .pop(), except it removes the first element instead of the last.
+
+Example:
+
+const ourArray = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray = ourArray.shift();
+removedFromOurArray would have a value of the string Stimpson, and ourArray would have ["J", ["cat"]]. */
+
+
+
+
+/*==================================
+47. Manipulate Arrays With unshift()
+====================================
+
+Not only can you shift elements off of the beginning of an array, you can also unshift elements to the beginning of an array 
+i.e. add elements in front of the array.
+
+.unshift() works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element 
+at the beginning of the array.
+
+Example:
+
+const ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();
+ourArray.unshift("Happy");
+After the shift, ourArray would have the value ["J", "cat"]. After the unshift, 
+ourArray would have the value ["Happy", "J", "cat"]. */
+
+
+
+
+/*===============
+48. Shopping List
+=================
+
+Create a shopping list in the variable myList. The list should be a multi-dimensional array containing several sub-arrays.
+
+The first element in each sub-array should contain a string with the name of the item. The second element should be a number 
+representing the quantity i.e.
+
+["Chocolate Bar", 15]
+There should be at least 5 sub-arrays in the list. */
+
+const myList = [
+    ["Tomate", 15],
+    ["Cebolla", 89],
+    ["Locote", 20],
+    ["Zanahoria", 7],
+    ["Perjil", 3]
+    ];
+
+
+
+
+/*==========================================
+49. Write Reusable JavaScript with Functions
+============================================
+
+In JavaScript, we can divide up our code into reusable parts called functions.
+
+Here's an example of a function:
+
+function functionName() {
+  console.log("Hello World");
+}
+You can call or invoke this function by using its name followed by parentheses, like this: functionName(); 
+Each time the function is called it will print out the message Hello World on the dev console. 
+All of the code between the curly braces will be executed every time the function is called. */
+
+
+
+
+/*============================================
+50. Passing Values to Functions with Arguments
+==============================================
+
+Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. 
+When a function is defined, it is typically defined along with one or more parameters. The actual values that are input 
+(or "passed") into a function when it is called are known as arguments.
+
+Here is a function with two parameters, param1 and param2:
+
+function testFun(param1, param2) {
+  console.log(param1, param2);
+}
+Then we can call testFun like this: testFun("Hello", "World");. We have passed two string arguments, Hello and World. 
+Inside the function, param1 will equal the string Hello and param2 will equal the string World. Note that you could call 
+testFun again with different arguments and the parameters would take on the value of the new arguments. */
+
+function hello(param1, param2) {
+    console.log(param1, param2);
+}
+
+var mundo = "world";
+
+hello("Hello", mundo);
