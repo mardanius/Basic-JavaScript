@@ -1522,6 +1522,7 @@ While these two functions look nearly identical if we pass a number to both we g
 
 foo(0)
 bar(0)
+
 foo(0) will return the string Less than one, and bar(0) will return the string Less than two. */
 
 
