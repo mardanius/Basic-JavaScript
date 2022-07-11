@@ -1,2 +1,2 @@
 # Basic JavaScript
-FreeCodeCamp
+FreeCodeCamp curriculum, concepts and exercises 
